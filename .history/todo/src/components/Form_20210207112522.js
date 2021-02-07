@@ -25,7 +25,8 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
         />
         <button onClick={submitTodoHandler}className="todo-button" type="submit">
           <i className="fas fa-plus-square"></i>
-        </button>
+        </button
+
         <div className="select">
           <select name="todos" className="filter-todo">
             <option value="all">All</option>
