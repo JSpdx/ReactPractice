@@ -7,13 +7,14 @@ import TodoList from './components/TodoList';
 function App() {
   // what is this syntax? are these variables both becoming new functions?
   const [inputText, setInputText] = useState("");
-  const [todos, setTodos] = useState([]);
+  const [inputText2, setInputText2] = useState("");
   return (
     <div className="App">
       <header>
-        <h1>Jon's Todo List</h1>
+        <h1>Jon's Todo List { inputText }</h1>
+        <br/><h1>Jon's Todo List { inputText2 }</h1>
       </header>
-      <Form todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}/>
+      <Form setInputText={setInputText} setInputText2={setInputText2} />
       <TodoList />
     </div>
   );
