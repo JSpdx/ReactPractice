@@ -3,7 +3,7 @@ import React from 'react';
 
 const Form = ({ inputText, setInputText, todos, setTodos }) => {
     //Here I can write javascript code and functions
-    const inputTextHandler = (e) => {
+    const inputTextHandler = (e) =>{
       console.log(e);
       setInputText(e.target.value);
     };
